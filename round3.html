@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 3 - Signal Intercept</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/round.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Round 3: Signal Intercept</h2>
+        
+        <div class="clue-box">
+            <p style="margin-bottom: 15px; color: #c9d1d9;">Unknown audio transmission received. Decode it.</p>
+            
+            <audio id="morseAudio" controls style="width: 100%; margin-bottom: 15px; border-radius: 4px;">
+                <source src="assets/code.mp3.aac" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <a href="assets/code.mp3.aac" download="intercepted_signal.mp3" style="text-decoration: none;">
+                <button type="button" style="background-color: #21262d; border: 1px solid #30363d; color: #58a6ff;">
+                    ⬇ Download Audio File
+                </button>
+            </a>
+        </div>
+
+        <input type="text" id="round3Input" placeholder="Enter decoded transmission..." autocomplete="off">
+        <button id="submitRound3">Verify</button>
+        
+        <p id="r3Error" class="error"></p>
+        
+        <div id="finalVictory" class="hidden success-box"></div>
+    </div>
+
+    <script type="module" src="js/firebase.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/round3.js" defer></script>
+
+</body>
+</html>

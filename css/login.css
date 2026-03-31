@@ -1,0 +1,9 @@
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginForm input {
+    margin-bottom: 15px;
+}

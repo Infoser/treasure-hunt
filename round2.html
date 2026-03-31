@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 2 - Decrypt the code</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/round.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Round 2: Decrypt the code</h2>
+        <p style="margin-bottom: 20px; color: #ccc;">fix the bugs, and run it. Relay the output to your field team to find the final extraction code.</p>
+        
+        <div class="code-box">
+            <button id="copyBtn">Copy Code</button>
+            <pre><code id="codeDisplay">Loading snippet...</code></pre>
+        </div>
+
+        <input type="text" id="round2Input" placeholder="Enter final extraction code..." autocomplete="off">
+        <button id="submitRound2">Verify Extraction</button>
+        
+        <p id="r2Error" class="error"></p>
+    </div>
+
+    <script type="module" src="js/firebase.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/round2.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 1 - Data Intercept</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/round.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Round 1: Encrypt the Data</h2>
+        
+        <div class="clue-box" id="clueDisplay">
+            <p>Intercepted Data Packet:</p>
+            
+            <code id="encryptedDataDisplay" style="color: #00ff00; font-size: 1.2em; display: block; margin: 15px 0; background: #050505; padding: 10px; border-radius: 4px; border: 1px solid #333;">
+                [ Establishing secure connection... ]
+            </code>
+            
+            <p style="font-size: 0.8em; margin-top: 15px; color: #888;">
+                (The data seems corrupted. Check the system diagnostics.)
+            </p>
+        </div>
+        
+        <input type="text" id="round1Input" placeholder="Enter verified code..." autocomplete="off">
+        <button id="submitRound1">Verify Code</button>
+        
+        <p id="r1Error" class="error"></p>
+    </div>
+
+    <script type="module" src="js/firebase.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/round1.js" defer></script>
+
+</body>
+</html>
