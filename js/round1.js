@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             "color: #ff4d4d; font-size: 20px; font-weight: bold; background: #0d1117; padding: 10px; border: 1px solid #ff4d4d;"
         );
         console.log(
-            `%cTo the dev reading this: The data packet on the screen is secured using a Bitwise XOR cipher. The decryption key is ${clueData.xorKey}.`, 
+            `%cTo the dev reading this: The data packet on the screen is secured using a Bitwise XOR cipher. The decryption key is 42.`, 
             "color: #7ee787; font-size: 14px; background: #0d1117; padding: 5px; border: 1px solid #30363d;"
         );
 
